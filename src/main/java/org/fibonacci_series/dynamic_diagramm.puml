@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Main -> FibonacciSeriesElementFounder: getFibonacciNumRecursive(n)
+FibonacciSeriesElementFounder --> Main:(if memo contains index n) long result
+
+FibonacciSeriesElementFounder -> FibonacciSeriesElementFounder: getFibonacciNumIteration(from 1 to n times)
+FibonacciSeriesElementFounder -> FibonacciSeriesElementFounder: memo.add(result getFibonacciNumIteration (from 1 to n times))
+FibonacciSeriesElementFounder --> Main: long result
+@enduml

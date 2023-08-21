@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Main -> FibonacciSeriesElementFounder: getFibonacciNumIteration(n)
+FibonacciSeriesElementFounder --> Main: long result
+
+@enduml
